@@ -1,25 +1,118 @@
-@keyframes copterAnimation{
-    0%{
-        top: 80%;
-    }
-    20%{
-        top: 10%;
-        left: 0%;
-    }
-    40%{
-        top: 10%;
-        left: 80%;
-    }
-    100%{
-        top: 80%;
-        left: 80%;
-    }
+#nav1 {
+    display: flex;
+    background-color: #023e69;
+    line-height: 40px;
+    color: white;
 }
 
-#copter{
-    width: 400px;
+.child:first-child {
+    flex-grow: 1;
+
+}
+
+.child2{
+    flex-grow: 1;
+}
+
+.child {
+    flex-grow: 2;
+}
+
+.btn {
+    background-color: yellow;
+    padding: 12px;
+    border-radius: 10%;
+}
+
+#nav2 {
+    background-color: orange;
+    display: flex;
+    line-height: 60px;
+
+}
+
+.child2:first-child {
+    flex-grow: 5;
+}
+
+.child2 {
+    flex-grow: 1;
+    text-align:center;
+
+}
+
+.child2:last-child {
+    flex-grow: 5;
+    text-align: center;
+}
+
+.search {
+    width: 240px;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid white;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 30%;
     position: absolute;
-    top: 90%;
-    animation: copterAnimation 10s ease 0s;
-    animation-fill-mode: forwards;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img{
+    background-image: url(./boys-g51a412605_1920.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+
+}
+section h1{
+    width: fit-content;
+    margin: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:75px;
+    font-style: bold;
+    color: #023e69;
+}
+#btn2{
+    margin: auto;
+    width: fit-content;
+    /* background-color:bl; */
+
+}
+.btn22{
+    background-color: yellow;
+    padding: 9px;
+    border: none;
+    border-radius: 10%;
 }
