@@ -1,0 +1,25 @@
+@keyframes copterAnimation{
+    0%{
+        top: 80%;
+    }
+    20%{
+        top: 10%;
+        left: 0%;
+    }
+    40%{
+        top: 10%;
+        left: 80%;
+    }
+    100%{
+        top: 80%;
+        left: 80%;
+    }
+}
+
+#copter{
+    width: 400px;
+    position: absolute;
+    top: 90%;
+    animation: copterAnimation 10s ease 0s;
+    animation-fill-mode: forwards;
+}
